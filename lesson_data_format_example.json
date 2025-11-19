@@ -1,0 +1,167 @@
+{
+  "lessons": [
+    {
+      "chapterId": "chapter-id-here",
+      "slug": "buddhism-as-a-path",
+      "titleEn": "Buddhism as a path",
+      "titleSi": "බෞද්ධාගම මාර්ගයක් ලෙස",
+      "orderIndex": 1,
+      "xpReward": 10,
+      "slides": [
+        {
+          "orderIndex": 1,
+          "type": "explanation",
+          "contentEn": "Buddhism is not just a religion or philosophy—it is a practical path to understanding life and finding peace.",
+          "contentSi": "බෞද්ධාගම යනු ආගමක් හෝ දර්ශනයක් පමණක් නොවේ—එය ජීවිතය අවබෝධ කර ගැනීමට සහ සාමය සොයා ගැනීමට ප්‍රායෝගික මාර්ගයකි.",
+          "imageUrl": null,
+          "videoUrlEn": null,
+          "videoUrlSi": null
+        },
+        {
+          "orderIndex": 2,
+          "type": "explanation",
+          "contentEn": "Like a path through a forest, Buddhism guides us step by step toward wisdom, compassion, and freedom from suffering.",
+          "contentSi": "වනයක් හරහා මාර්ගයක් මෙන්, බෞද්ධාගම අපව පියවරෙන් පියවර ප්‍රඥාව, කරුණාව සහ දුක්ඛයෙන් නිදහසට මඟ පෙන්වයි.",
+          "imageUrl": null,
+          "videoUrlEn": null,
+          "videoUrlSi": null
+        },
+        {
+          "orderIndex": 3,
+          "type": "summary",
+          "contentEn": "This path is open to everyone, regardless of background. It is about practice, not just belief.",
+          "contentSi": "මෙම මාර්ගය සියලු දෙනාටම විවෘතයි, පසුබිම නොසලකා. එය විශ්වාසය පමණක් නොව පිළිපැදීම පිළිබඳවයි.",
+          "imageUrl": null,
+          "videoUrlEn": null,
+          "videoUrlSi": null
+        }
+      ],
+      "questions": [
+        {
+          "orderIndex": 1,
+          "type": "single_choice",
+          "promptEn": "Buddhism is best described as…",
+          "promptSi": "බෞද්ධාගම හොඳින් විස්තර කළ හැක්කේ…",
+          "configJson": {
+            "options": {
+              "en": [
+                "A set of beliefs",
+                "A practical path to understanding and peace",
+                "A collection of rituals",
+                "A historical tradition"
+              ],
+              "si": [
+                "විශ්වාස කට්ටලයක්",
+                "අවබෝධයට සහ සාමයට ප්‍රායෝගික මාර්ගයක්",
+                "චාරිත්‍ර එකතුවක්",
+                "ඓතිහාසික සම්ප්‍රදායක්"
+              ]
+            },
+            "correctIndex": 1
+          }
+        },
+        {
+          "orderIndex": 2,
+          "type": "true_false",
+          "promptEn": "Buddhism is primarily about practice, not just belief.",
+          "promptSi": "බෞද්ධාගම ප්‍රධාන වශයෙන් පිළිපැදීම පිළිබඳවයි, විශ්වාසය පමණක් නොවේ.",
+          "configJson": {
+            "answer": true
+          }
+        }
+      ],
+      "reflection": {
+        "prompt": {
+          "en": "How do you feel about starting this journey?",
+          "si": "මෙම ගමන ආරම්භ කිරීම ගැන ඔබට හැඟෙන්නේ කෙසේද?"
+        },
+        "options": {
+          "en": [
+            "Excited and ready",
+            "Curious but unsure",
+            "A bit nervous",
+            "Other"
+          ],
+          "si": [
+            "උද්යෝගී සහ සූදානම්",
+            "කුතුහලයෙන් නමුත් නිශ්චිත නැත",
+            "සැක සහිත",
+            "වෙනත්"
+          ]
+        }
+      }
+    },
+    {
+      "chapterId": "chapter-id-here",
+      "slug": "goals-of-buddhist-path",
+      "titleEn": "Goals of the Buddhist path",
+      "titleSi": "බෞද්ධ මාර්ගයේ අරමුණු",
+      "orderIndex": 2,
+      "xpReward": 10,
+      "slides": [
+        {
+          "orderIndex": 1,
+          "type": "explanation",
+          "contentEn": "The ultimate goal of Buddhism is to achieve enlightenment and end suffering.",
+          "contentSi": "බෞද්ධාගමේ අවසාන අරමුණ වන්නේ බුද්ධත්වය ලබා ගැනීම සහ දුක්ඛය අවසන් කිරීමයි.",
+          "imageUrl": null,
+          "videoUrlEn": null,
+          "videoUrlSi": null
+        }
+      ],
+      "questions": [
+        {
+          "orderIndex": 1,
+          "type": "single_choice",
+          "promptEn": "What is the ultimate goal of Buddhism?",
+          "promptSi": "බෞද්ධාගමේ අවසාන අරමුණ කුමක්ද?",
+          "configJson": {
+            "options": {
+              "en": [
+                "To accumulate wealth",
+                "To achieve enlightenment and end suffering",
+                "To gain power",
+                "To follow rituals"
+              ],
+              "si": [
+                "ධනය රැස් කිරීම",
+                "බුද්ධත්වය ලබා ගැනීම සහ දුක්ඛය අවසන් කිරීම",
+                "බලය ලබා ගැනීම",
+                "චාරිත්‍ර අනුගමනය කිරීම"
+              ]
+            },
+            "correctIndex": 1
+          }
+        }
+      ],
+      "reflection": {
+        "prompt": {
+          "en": "What draws you to this path?",
+          "si": "මෙම මාර්ගයට ඔබව ඇදී යන්නේ කුමක්ද?"
+        },
+        "options": {
+          "en": [
+            "Seeking peace",
+            "Understanding life",
+            "Personal growth",
+            "Other"
+          ],
+          "si": [
+            "සාමය සොයා ගැනීම",
+            "ජීවිතය අවබෝධ කර ගැනීම",
+            "පුද්ගලික වර්ධනය",
+            "වෙනත්"
+          ]
+        }
+      }
+    }
+  ]
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,86 @@
+services:
+  # PostgreSQL Database
+  postgres:
+    image: postgres:16-alpine
+    container_name: realpath-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+      POSTGRES_DB: ${POSTGRES_DB:-realpath_db}
+    ports:
+      - "5433:5432"
+    volumes:
+      - realpath_postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-postgres}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - realpath-network
+
+  # Redis Cache
+  redis:
+    image: redis:7-alpine
+    container_name: realpath-redis
+    restart: unless-stopped
+    ports:
+      - "6380:6379"
+    volumes:
+      - realpath_redis_data:/data
+    command: redis-server --appendonly yes
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - realpath-network
+
+  # Backend API
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: realpath-backend
+    restart: unless-stopped
+    environment:
+      NODE_ENV: ${NODE_ENV:-production}
+      PORT: 3000
+      DATABASE_URL: postgresql://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-postgres}@postgres:5432/${POSTGRES_DB:-realpath_db}?schema=public
+      REDIS_URL: redis://redis:6379
+      JWT_SECRET: ${JWT_SECRET:-change-me-in-production}
+      JWT_EXPIRES_IN: ${JWT_EXPIRES_IN:-7d}
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./backend/uploads:/app/uploads
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    networks:
+      - realpath-network
+    command: >
+      sh -c "
+        echo 'Waiting for database to be ready...' &&
+        until npx prisma migrate deploy; do
+          echo 'Migration failed, retrying in 5 seconds...'
+          sleep 5
+        done &&
+        echo 'Starting server...' &&
+        node dist/server.js
+      "
+
+volumes:
+  realpath_postgres_data:
+    driver: local
+  realpath_redis_data:
+    driver: local
+
+networks:
+  realpath-network:
+    driver: bridge
+

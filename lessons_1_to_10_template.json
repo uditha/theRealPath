@@ -1,0 +1,708 @@
+{
+  "note": "Replace 'chapter-id-here' with actual chapter UUIDs from your database",
+  "lessons": [
+    {
+      "chapterId": "chapter-id-here",
+      "slug": "buddhism-as-a-path",
+      "titleEn": "Buddhism as a path",
+      "titleSi": "බෞද්ධාගම මාර්ගයක් ලෙස",
+      "orderIndex": 1,
+      "xpReward": 10,
+      "slides": [
+        {
+          "orderIndex": 1,
+          "type": "explanation",
+          "contentEn": "Buddhism is not just a religion or philosophy—it is a practical path to understanding life and finding peace.",
+          "contentSi": "බෞද්ධාගම යනු ආගමක් හෝ දර්ශනයක් පමණක් නොවේ—එය ජීවිතය අවබෝධ කර ගැනීමට සහ සාමය සොයා ගැනීමට ප්‍රායෝගික මාර්ගයකි.",
+          "imageUrl": null,
+          "videoUrlEn": null,
+          "videoUrlSi": null
+        },
+        {
+          "orderIndex": 2,
+          "type": "explanation",
+          "contentEn": "Like a path through a forest, Buddhism guides us step by step toward wisdom, compassion, and freedom from suffering.",
+          "contentSi": "වනයක් හරහා මාර්ගයක් මෙන්, බෞද්ධාගම අපව පියවරෙන් පියවර ප්‍රඥාව, කරුණාව සහ දුක්ඛයෙන් නිදහසට මඟ පෙන්වයි.",
+          "imageUrl": null,
+          "videoUrlEn": null,
+          "videoUrlSi": null
+        },
+        {
+          "orderIndex": 3,
+          "type": "summary",
+          "contentEn": "This path is open to everyone, regardless of background. It is about practice, not just belief.",
+          "contentSi": "මෙම මාර්ගය සියලු දෙනාටම විවෘතයි, පසුබිම නොසලකා. එය විශ්වාසය පමණක් නොව පිළිපැදීම පිළිබඳවයි.",
+          "imageUrl": null,
+          "videoUrlEn": null,
+          "videoUrlSi": null
+        }
+      ],
+      "questions": [
+        {
+          "orderIndex": 1,
+          "type": "single_choice",
+          "promptEn": "Buddhism is best described as…",
+          "promptSi": "බෞද්ධාගම හොඳින් විස්තර කළ හැක්කේ…",
+          "configJson": {
+            "options": {
+              "en": [
+                "A set of beliefs",
+                "A practical path to understanding and peace",
+                "A collection of rituals",
+                "A historical tradition"
+              ],
+              "si": [
+                "විශ්වාස කට්ටලයක්",
+                "අවබෝධයට සහ සාමයට ප්‍රායෝගික මාර්ගයක්",
+                "චාරිත්‍ර එකතුවක්",
+                "ඓතිහාසික සම්ප්‍රදායක්"
+              ]
+            },
+            "correctIndex": 1
+          }
+        },
+        {
+          "orderIndex": 2,
+          "type": "true_false",
+          "promptEn": "Buddhism is primarily about practice, not just belief.",
+          "promptSi": "බෞද්ධාගම ප්‍රධාන වශයෙන් පිළිපැදීම පිළිබඳවයි, විශ්වාසය පමණක් නොවේ.",
+          "configJson": {
+            "answer": true
+          }
+        }
+      ],
+      "reflection": {
+        "prompt": {
+          "en": "How do you feel about starting this journey?",
+          "si": "මෙම ගමන ආරම්භ කිරීම ගැන ඔබට හැඟෙන්නේ කෙසේද?"
+        },
+        "options": {
+          "en": [
+            "Excited and ready",
+            "Curious but unsure",
+            "A bit nervous",
+            "Other"
+          ],
+          "si": [
+            "උද්යෝගී සහ සූදානම්",
+            "කුතුහලයෙන් නමුත් නිශ්චිත නැත",
+            "සැක සහිත",
+            "වෙනත්"
+          ]
+        }
+      }
+    },
+    {
+      "chapterId": "chapter-id-here",
+      "slug": "goals-of-buddhist-path",
+      "titleEn": "Goals of the Buddhist path",
+      "titleSi": "බෞද්ධ මාර්ගයේ අරමුණු",
+      "orderIndex": 2,
+      "xpReward": 10,
+      "slides": [
+        {
+          "orderIndex": 1,
+          "type": "explanation",
+          "contentEn": "The ultimate goal of Buddhism is to achieve enlightenment and end suffering.",
+          "contentSi": "බෞද්ධාගමේ අවසාන අරමුණ වන්නේ බුද්ධත්වය ලබා ගැනීම සහ දුක්ඛය අවසන් කිරීමයි.",
+          "imageUrl": null,
+          "videoUrlEn": null,
+          "videoUrlSi": null
+        },
+        {
+          "orderIndex": 2,
+          "type": "explanation",
+          "contentEn": "This journey involves developing wisdom, ethical conduct, and mental discipline.",
+          "contentSi": "මෙම ගමනට ප්‍රඥාව, සදාචාරාත්මක හැසිරීම සහ මානසික විනය වර්ධනය කිරීම ඇතුළත් වේ.",
+          "imageUrl": null,
+          "videoUrlEn": null,
+          "videoUrlSi": null
+        }
+      ],
+      "questions": [
+        {
+          "orderIndex": 1,
+          "type": "single_choice",
+          "promptEn": "What is the ultimate goal of Buddhism?",
+          "promptSi": "බෞද්ධාගමේ අවසාන අරමුණ කුමක්ද?",
+          "configJson": {
+            "options": {
+              "en": [
+                "To accumulate wealth",
+                "To achieve enlightenment and end suffering",
+                "To gain power",
+                "To follow rituals"
+              ],
+              "si": [
+                "ධනය රැස් කිරීම",
+                "බුද්ධත්වය ලබා ගැනීම සහ දුක්ඛය අවසන් කිරීම",
+                "බලය ලබා ගැනීම",
+                "චාරිත්‍ර අනුගමනය කිරීම"
+              ]
+            },
+            "correctIndex": 1
+          }
+        }
+      ],
+      "reflection": {
+        "prompt": {
+          "en": "What draws you to this path?",
+          "si": "මෙම මාර්ගයට ඔබව ඇදී යන්නේ කුමක්ද?"
+        },
+        "options": {
+          "en": [
+            "Seeking peace",
+            "Understanding life",
+            "Personal growth",
+            "Other"
+          ],
+          "si": [
+            "සාමය සොයා ගැනීම",
+            "ජීවිතය අවබෝධ කර ගැනීම",
+            "පුද්ගලික වර්ධනය",
+            "වෙනත්"
+          ]
+        }
+      }
+    },
+    {
+      "chapterId": "chapter-id-here",
+      "slug": "misconceptions-removed",
+      "titleEn": "Misconceptions removed",
+      "titleSi": "වැරදි අදහස් ඉවත් කිරීම",
+      "orderIndex": 3,
+      "xpReward": 10,
+      "slides": [
+        {
+          "orderIndex": 1,
+          "type": "explanation",
+          "contentEn": "Many people have misconceptions about Buddhism. Let's clarify some common ones.",
+          "contentSi": "බොහෝ දෙනෙක් බෞද්ධාගම ගැන වැරදි අදහස් ඇත. සමහර පොදු ඒවා පැහැදිලි කරමු.",
+          "imageUrl": null,
+          "videoUrlEn": null,
+          "videoUrlSi": null
+        },
+        {
+          "orderIndex": 2,
+          "type": "explanation",
+          "contentEn": "Buddhism is not pessimistic—it acknowledges suffering but also provides a path to end it.",
+          "contentSi": "බෞද්ධාගම නිරාශාවාදී නොවේ—එය දුක්ඛය පිළිගනී නමුත් එය අවසන් කිරීමට මාර්ගයක් ද සපයයි.",
+          "imageUrl": null,
+          "videoUrlEn": null,
+          "videoUrlSi": null
+        }
+      ],
+      "questions": [
+        {
+          "orderIndex": 1,
+          "type": "multi_select",
+          "promptEn": "Which of the following are common misconceptions about Buddhism?",
+          "promptSi": "පහත සඳහන් ඒවායින් බෞද්ධාගම ගැන පොදු වැරදි අදහස් මොනවාද?",
+          "configJson": {
+            "options": {
+              "en": [
+                "Buddhism is pessimistic",
+                "Buddhists worship Buddha as a god",
+                "Buddhism requires giving up all possessions",
+                "Buddhism is only for monks"
+              ],
+              "si": [
+                "බෞද්ධාගම නිරාශාවාදීය",
+                "බෞද්ධයන් බුදුන් වහන්සේ දෙවියෙකු ලෙස පුදනවා",
+                "බෞද්ධාගම සියලු දේපළ අත්හැරීම අවශ්‍ය කරයි",
+                "බෞද්ධාගම භික්ෂූන්ට පමණි"
+              ]
+            },
+            "correctIndices": [0, 1, 2, 3]
+          }
+        }
+      ],
+      "reflection": {
+        "prompt": {
+          "en": "Did you have any misconceptions about Buddhism before?",
+          "si": "ඔබට කලින් බෞද්ධාගම ගැන වැරදි අදහස් තිබුණාද?"
+        },
+        "options": {
+          "en": [
+            "Yes, several",
+            "A few",
+            "None",
+            "Not sure"
+          ],
+          "si": [
+            "ඔව්, කිහිපයක්",
+            "කිහිපයක්",
+            "කිසිවක් නැත",
+            "නිශ්චිත නැත"
+          ]
+        }
+      }
+    },
+    {
+      "chapterId": "chapter-id-here",
+      "slug": "prince-siddhartha",
+      "titleEn": "Prince Siddhartha",
+      "titleSi": "සිද්ධාර්ථ කුමාරයා",
+      "orderIndex": 4,
+      "xpReward": 10,
+      "slides": [
+        {
+          "orderIndex": 1,
+          "type": "story",
+          "contentEn": "Siddhartha Gautama was born a prince in Lumbini, Nepal, around 563 BCE.",
+          "contentSi": "සිද්ධාර්ථ ගෞතම බුදුන් වහන්සේ ක්‍රි.පූ. 563 පමණ නේපාලයේ ලුම්බිනියේ කුමරෙකු ලෙස උපත ලැබීය.",
+          "imageUrl": null,
+          "videoUrlEn": null,
+          "videoUrlSi": null
+        },
+        {
+          "orderIndex": 2,
+          "type": "story",
+          "contentEn": "His father, King Suddhodana, tried to shield him from suffering, but Siddhartha eventually saw the realities of old age, sickness, and death.",
+          "contentSi": "උන්වහන්සේගේ පියා වන සුද්ධෝදන රජතුමා දුක්ඛයෙන් ආරක්ෂා කිරීමට උත්සාහ කළ නමුත් සිද්ධාර්ථ අවසානයේ වයසට යාම, රෝගී බව සහ මරණයේ යථාර්ථය දුටුවේය.",
+          "imageUrl": null,
+          "videoUrlEn": null,
+          "videoUrlSi": null
+        }
+      ],
+      "questions": [
+        {
+          "orderIndex": 1,
+          "type": "single_choice",
+          "promptEn": "Where was Siddhartha Gautama born?",
+          "promptSi": "සිද්ධාර්ථ ගෞතම උපත ලැබුවේ කොහේද?",
+          "configJson": {
+            "options": {
+              "en": [
+                "India",
+                "Nepal",
+                "Tibet",
+                "Sri Lanka"
+              ],
+              "si": [
+                "ඉන්දියාව",
+                "නේපාලය",
+                "ටිබෙට්",
+                "ශ්‍රී ලංකාව"
+              ]
+            },
+            "correctIndex": 1
+          }
+        }
+      ],
+      "reflection": {
+        "prompt": {
+          "en": "What do you think about Siddhartha's decision to leave the palace?",
+          "si": "සිද්ධාර්ථ කුමරුගේ මාලිගාවෙන් පිටවීමේ තීරණය ගැන ඔබ සිතන්නේ කුමක්ද?"
+        },
+        "options": {
+          "en": [
+            "Very courageous",
+            "Understandable",
+            "Difficult to understand",
+            "Other"
+          ],
+          "si": [
+            "ඉතා නිර්භීත",
+            "තේරුම් ගත හැකි",
+            "තේරුම් ගැනීමට අපහසු",
+            "වෙනත්"
+          ]
+        }
+      }
+    },
+    {
+      "chapterId": "chapter-id-here",
+      "slug": "the-great-renunciation",
+      "titleEn": "The Great Renunciation",
+      "titleSi": "මහා පැවිදි",
+      "orderIndex": 5,
+      "xpReward": 10,
+      "slides": [
+        {
+          "orderIndex": 1,
+          "type": "story",
+          "contentEn": "At age 29, Siddhartha left his palace, family, and luxurious life to seek the truth about suffering.",
+          "contentSi": "වයස අවුරුදු 29 දී, සිද්ධාර්ථ කුමරු දුක්ඛය ගැන සත්‍යය සොයා ගැනීමට තම මාලිගාව, පවුල සහ විලාසිත ජීවිතය අත්හැරියේය.",
+          "imageUrl": null,
+          "videoUrlEn": null,
+          "videoUrlSi": null
+        }
+      ],
+      "questions": [
+        {
+          "orderIndex": 1,
+          "type": "true_false",
+          "promptEn": "Siddhartha left the palace at age 29.",
+          "promptSi": "සිද්ධාර්ථ කුමරු වයස අවුරුදු 29 දී මාලිගාවෙන් පිටවිය.",
+          "configJson": {
+            "answer": true
+          }
+        }
+      ],
+      "reflection": {
+        "prompt": {
+          "en": "What would you be willing to give up to find truth?",
+          "si": "සත්‍යය සොයා ගැනීමට ඔබ කුමක් අත්හැරීමට කැමතිද?"
+        },
+        "options": {
+          "en": [
+            "Comfort",
+            "Wealth",
+            "Status",
+            "Not sure"
+          ],
+          "si": [
+            "සැපපහසුව",
+            "ධනය",
+            "තත්ත්වය",
+            "නිශ්චිත නැත"
+          ]
+        }
+      }
+    },
+    {
+      "chapterId": "chapter-id-here",
+      "slug": "enlightenment",
+      "titleEn": "Enlightenment",
+      "titleSi": "බුද්ධත්වය",
+      "orderIndex": 6,
+      "xpReward": 10,
+      "slides": [
+        {
+          "orderIndex": 1,
+          "type": "story",
+          "contentEn": "After years of meditation and practice, Siddhartha achieved enlightenment under the Bodhi tree.",
+          "contentSi": "භාවනාව සහ පිළිපැදීමේ වසර ගණනකට පසු, සිද්ධාර්ථ බෝධි ගස යට බුද්ධත්වය ලබා ගත්තේය.",
+          "imageUrl": null,
+          "videoUrlEn": null,
+          "videoUrlSi": null
+        },
+        {
+          "orderIndex": 2,
+          "type": "quote",
+          "contentEn": "I have found the path to the end of suffering.",
+          "contentSi": "මම දුක්ඛයේ අවසානයට මාර්ගය සොයාගෙන ඇත.",
+          "imageUrl": null,
+          "videoUrlEn": null,
+          "videoUrlSi": null
+        }
+      ],
+      "questions": [
+        {
+          "orderIndex": 1,
+          "type": "single_choice",
+          "promptEn": "Where did Siddhartha achieve enlightenment?",
+          "promptSi": "සිද්ධාර්ථ බුද්ධත්වය ලබා ගත්තේ කොහේද?",
+          "configJson": {
+            "options": {
+              "en": [
+                "In a cave",
+                "Under the Bodhi tree",
+                "In a temple",
+                "On a mountain"
+              ],
+              "si": [
+                "ගුහාවක",
+                "බෝධි ගස යට",
+                "විහාරයක",
+                "කන්දක"
+              ]
+            },
+            "correctIndex": 1
+          }
+        }
+      ],
+      "reflection": {
+        "prompt": {
+          "en": "What does enlightenment mean to you?",
+          "si": "බුද්ධත්වය ඔබට අදහස් කරන්නේ කුමක්ද?"
+        },
+        "options": {
+          "en": [
+            "Perfect understanding",
+            "Freedom from suffering",
+            "Inner peace",
+            "Other"
+          ],
+          "si": [
+            "පරිපූර්ණ අවබෝධය",
+            "දුක්ඛයෙන් නිදහස",
+            "අභ්‍යන්තර සාමය",
+            "වෙනත්"
+          ]
+        }
+      }
+    },
+    {
+      "chapterId": "chapter-id-here",
+      "slug": "buddha-as-teacher-not-god",
+      "titleEn": "The Buddha as teacher, not god",
+      "titleSi": "බුදුන් වහන්සේ ගුරුවරයෙක්, දෙවියෙක් නොවේ",
+      "orderIndex": 7,
+      "xpReward": 10,
+      "slides": [
+        {
+          "orderIndex": 1,
+          "type": "explanation",
+          "contentEn": "The Buddha is not a god or deity. He was a human being who achieved enlightenment through his own efforts.",
+          "contentSi": "බුදුන් වහන්සේ දෙවියෙක් හෝ දෙවිවරයෙක් නොවේ. උන්වහන්සේ තමන්ගේම උත්සාහයෙන් බුද්ධත්වය ලබා ගත් මනුෂ්‍යයෙකි.",
+          "imageUrl": null,
+          "videoUrlEn": null,
+          "videoUrlSi": null
+        },
+        {
+          "orderIndex": 2,
+          "type": "explanation",
+          "contentEn": "Buddhists do not worship the Buddha as a god, but rather respect him as a teacher who showed the path to enlightenment.",
+          "contentSi": "බෞද්ධයන් බුදුන් වහන්සේ දෙවියෙකු ලෙස නොපුදන නමුත් බුද්ධත්වයට මාර්ගය පෙන්වූ ගුරුවරයෙකු ලෙස ගරු කරති.",
+          "imageUrl": null,
+          "videoUrlEn": null,
+          "videoUrlSi": null
+        }
+      ],
+      "questions": [
+        {
+          "orderIndex": 1,
+          "type": "true_false",
+          "promptEn": "Buddhists worship the Buddha as a god.",
+          "promptSi": "බෞද්ධයන් බුදුන් වහන්සේ දෙවියෙකු ලෙස පුදනවා.",
+          "configJson": {
+            "answer": false
+          }
+        }
+      ],
+      "reflection": {
+        "prompt": {
+          "en": "How do you view the Buddha?",
+          "si": "ඔබ බුදුන් වහන්සේ දකින්නේ කෙසේද?"
+        },
+        "options": {
+          "en": [
+            "As a teacher",
+            "As a guide",
+            "As an inspiration",
+            "Other"
+          ],
+          "si": [
+            "ගුරුවරයෙකු ලෙස",
+            "මඟ පෙන්වන්නෙකු ලෙස",
+            "අභිප්‍රේරණයක් ලෙස",
+            "වෙනත්"
+          ]
+        }
+      }
+    },
+    {
+      "chapterId": "chapter-id-here",
+      "slug": "dhamma-as-natural-law",
+      "titleEn": "Dhamma as natural law",
+      "titleSi": "ධර්මය ස්වභාවික නියමයක් ලෙස",
+      "orderIndex": 8,
+      "xpReward": 10,
+      "slides": [
+        {
+          "orderIndex": 1,
+          "type": "explanation",
+          "contentEn": "Dhamma refers to the natural law that governs the universe—the way things truly are.",
+          "contentSi": "ධර්මය යනු විශ්වය පාලනය කරන ස්වභාවික නියමය—දේවල් සැබවින්ම පවතින ආකාරය.",
+          "imageUrl": null,
+          "videoUrlEn": null,
+          "videoUrlSi": null
+        },
+        {
+          "orderIndex": 2,
+          "type": "explanation",
+          "contentEn": "Just as gravity is a natural law, so too is the law of cause and effect (kamma) that governs our actions.",
+          "contentSi": "ගුරුත්වාකර්ෂණය ස්වභාවික නියමයක් වන්නාක් මෙන්, අපගේ ක්‍රියා පාලනය කරන හේතුව සහ ප්‍රතිඵලයේ නියමය (කර්මය) ද වේ.",
+          "imageUrl": null,
+          "videoUrlEn": null,
+          "videoUrlSi": null
+        }
+      ],
+      "questions": [
+        {
+          "orderIndex": 1,
+          "type": "single_choice",
+          "promptEn": "What does Dhamma refer to?",
+          "promptSi": "ධර්මය යනු කුමක්ද?",
+          "configJson": {
+            "options": {
+              "en": [
+                "A book",
+                "The natural law that governs the universe",
+                "A ritual",
+                "A place"
+              ],
+              "si": [
+                "පොතක්",
+                "විශ්වය පාලනය කරන ස්වභාවික නියමය",
+                "චාරිත්‍රයක්",
+                "ස්ථානයක්"
+              ]
+            },
+            "correctIndex": 1
+          }
+        }
+      ],
+      "reflection": {
+        "prompt": {
+          "en": "Do you believe in the law of cause and effect?",
+          "si": "ඔබ හේතුව සහ ප්‍රතිඵලයේ නියමය විශ්වාස කරනවාද?"
+        },
+        "options": {
+          "en": [
+            "Yes, strongly",
+            "Yes, somewhat",
+            "Not sure",
+            "No"
+          ],
+          "si": [
+            "ඔව්, තදින්",
+            "ඔව්, යම් තරමකින්",
+            "නිශ්චිත නැත",
+            "නැත"
+          ]
+        }
+      }
+    },
+    {
+      "chapterId": "chapter-id-here",
+      "slug": "dhamma-as-teachings",
+      "titleEn": "Dhamma as teachings",
+      "titleSi": "ධර්මය ඉගැන්වීම් ලෙස",
+      "orderIndex": 9,
+      "xpReward": 10,
+      "slides": [
+        {
+          "orderIndex": 1,
+          "type": "explanation",
+          "contentEn": "Dhamma also refers to the teachings of the Buddha—the instructions for how to live and practice.",
+          "contentSi": "ධර්මය යනු බුදුන් වහන්සේගේ ඉගැන්වීම්—කෙසේ ජීවත් විය යුතුද සහ පිළිපැදිය යුතුද යන්න පිළිබඳ උපදෙස්.",
+          "imageUrl": null,
+          "videoUrlEn": null,
+          "videoUrlSi": null
+        }
+      ],
+      "questions": [
+        {
+          "orderIndex": 1,
+          "type": "single_choice",
+          "promptEn": "Dhamma as teachings refers to:",
+          "promptSi": "ධර්මය ඉගැන්වීම් ලෙස යනු:",
+          "configJson": {
+            "options": {
+              "en": [
+                "The Buddha's physical form",
+                "The Buddha's instructions for living and practice",
+                "A sacred place",
+                "A type of meditation"
+              ],
+              "si": [
+                "බුදුන් වහන්සේගේ ශාරීරික ස්වරූපය",
+                "ජීවත් වීම සහ පිළිපැදීම සඳහා බුදුන් වහන්සේගේ උපදෙස්",
+                "පූජනීය ස්ථානයක්",
+                "භාවනාවක්"
+              ]
+            },
+            "correctIndex": 1
+          }
+        }
+      ],
+      "reflection": {
+        "prompt": {
+          "en": "How do you plan to apply these teachings?",
+          "si": "ඔබ මෙම ඉගැන්වීම් යොදා ගැනීමට සැලසුම් කරන්නේ කෙසේද?"
+        },
+        "options": {
+          "en": [
+            "In daily life",
+            "In meditation",
+            "In relationships",
+            "All of the above"
+          ],
+          "si": [
+            "දෛනික ජීවිතයේ",
+            "භාවනාවේ",
+            "සබඳතාවල",
+            "ඉහත සියල්ල"
+          ]
+        }
+      }
+    },
+    {
+      "chapterId": "chapter-id-here",
+      "slug": "dhamma-as-practice",
+      "titleEn": "Dhamma as practice",
+      "titleSi": "ධර්මය පිළිපැදීමක් ලෙස",
+      "orderIndex": 10,
+      "xpReward": 10,
+      "slides": [
+        {
+          "orderIndex": 1,
+          "type": "explanation",
+          "contentEn": "Dhamma is not just theory—it must be practiced. Understanding alone is not enough.",
+          "contentSi": "ධර්මය න්‍යාය පමණක් නොවේ—එය පිළිපැදිය යුතුය. අවබෝධය පමණක් ප්‍රමාණවත් නොවේ.",
+          "imageUrl": null,
+          "videoUrlEn": null,
+          "videoUrlSi": null
+        },
+        {
+          "orderIndex": 2,
+          "type": "explanation",
+          "contentEn": "Regular practice of meditation, mindfulness, and ethical conduct is essential to walking the path.",
+          "contentSi": "භාවනාව, සතිය සහ සදාචාරාත්මක හැසිරීමේ නිත්‍ය පිළිපැදීම මාර්ගයේ ඇවිදීමට අත්‍යවශ්‍යය.",
+          "imageUrl": null,
+          "videoUrlEn": null,
+          "videoUrlSi": null
+        }
+      ],
+      "questions": [
+        {
+          "orderIndex": 1,
+          "type": "multi_select",
+          "promptEn": "What are essential practices in Buddhism?",
+          "promptSi": "බෞද්ධාගමේ අත්‍යවශ්‍ය පිළිපැදීම් මොනවාද?",
+          "configJson": {
+            "options": {
+              "en": [
+                "Meditation",
+                "Mindfulness",
+                "Ethical conduct",
+                "Reading books only"
+              ],
+              "si": [
+                "භාවනාව",
+                "සතිය",
+                "සදාචාරාත්මක හැසිරීම",
+                "පොත් කියවීම පමණක්"
+              ]
+            },
+            "correctIndices": [0, 1, 2]
+          }
+        }
+      ],
+      "reflection": {
+        "prompt": {
+          "en": "What practice would you like to start with?",
+          "si": "ඔබ ආරම්භ කිරීමට කැමති පිළිපැදීම කුමක්ද?"
+        },
+        "options": {
+          "en": [
+            "Meditation",
+            "Mindfulness",
+            "Ethical living",
+            "All of the above"
+          ],
+          "si": [
+            "භාවනාව",
+            "සතිය",
+            "සදාචාරාත්මක ජීවිතය",
+            "ඉහත සියල්ල"
+          ]
+        }
+      }
+    }
+  ]
+}
+

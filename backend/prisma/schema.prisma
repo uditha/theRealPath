@@ -1,0 +1,241 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id                String    @id @default(uuid())
+  name              String
+  email             String    @unique
+  phone             String?
+  profileImage      String?
+  bio               String?
+  googleId          String?   @unique
+  emailVerified     Boolean   @default(false)
+  phoneVerified     Boolean   @default(false)
+  password          String?
+  role              String    @default("user")
+  languagePreference String?  @default("en") // 'en' | 'si'
+  dailyGoalXP       Int       @default(10) // Daily XP goal (10, 20, 30, 50)
+  totalXP           Int       @default(0)
+  hearts            Int       @default(5) // Duolingo-style hearts/lives
+  maxHearts         Int       @default(5)
+  lastHeartRefillAt DateTime?
+  timezone          String?   @default("UTC")
+  createdAt         DateTime  @default(now())
+  updatedAt         DateTime  @updatedAt
+
+  // Relations
+  progress          UserProgress[]
+  streak            Streak?
+  cards             UserCard[]
+  reflections       Reflection[]
+
+  @@map("users")
+}
+
+model World {
+  id              String    @id @default(uuid())
+  nameEn          String
+  nameSi          String
+  orderIndex     Int
+  themeKey        String    // Used by frontend for styling
+  backgroundImageUrl String? // Optional background image URL
+  isActive        Boolean   @default(true)
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+
+  chapters        Chapter[]
+
+  @@map("worlds")
+}
+
+model Chapter {
+  id         String   @id @default(uuid())
+  worldId    String
+  nameEn     String
+  nameSi     String
+  orderIndex Int
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  world      World    @relation(fields: [worldId], references: [id], onDelete: Cascade)
+  lessons    Lesson[]
+
+  @@index([worldId])
+  @@index([worldId, orderIndex])
+  @@map("chapters")
+}
+
+model Lesson {
+  id         String   @id @default(uuid())
+  chapterId  String
+  slug       String
+  titleEn    String
+  titleSi    String
+  orderIndex Int
+  xpReward   Int      @default(10) // Base XP for completing lesson
+  isActive   Boolean  @default(true)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  chapter    Chapter  @relation(fields: [chapterId], references: [id], onDelete: Cascade)
+  slides     Slide[]
+  questions  Question[]
+  progress   UserProgress[]
+  reflections Reflection[]
+  reflectionQuestions ReflectionQuestion[]
+
+  @@index([chapterId])
+  @@index([chapterId, isActive])
+  @@unique([chapterId, orderIndex])
+  @@map("lessons")
+}
+
+model Slide {
+  id         String   @id @default(uuid())
+  lessonId   String
+  orderIndex Int
+  type       String   // 'explanation' | 'story' | 'summary' | 'quote'
+  contentEn  String   // JSON or text
+  contentSi  String
+  imageUrl   String?
+  videoUrlEn String?
+  videoUrlSi String?
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  lesson     Lesson   @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+
+  @@index([lessonId])
+  @@unique([lessonId, orderIndex])
+  @@map("slides")
+}
+
+model Question {
+  id        String   @id @default(uuid())
+  lessonId  String
+  orderIndex Int
+  type      String   // 'single_choice' | 'multi_select' | 'true_false' | 'matching' | 'fill_blank' | 'image_choice'
+  promptEn  String
+  promptSi  String
+  configJson Json    // Flexible JSON for options, answers, pairs, etc.
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  lesson    Lesson   @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+
+  @@index([lessonId])
+  @@unique([lessonId, orderIndex])
+  @@map("questions")
+}
+
+model UserProgress {
+  id            String   @id @default(uuid())
+  userId        String
+  lessonId      String
+  status        String   @default("not_started") // 'not_started' | 'in_progress' | 'completed'
+  bestScore     Int      @default(0) // 0-100 percentage
+  masteryLevel  Int      @default(0) // 0-5 (Duolingo-style mastery)
+  lastAttemptAt DateTime?
+  completedAt   DateTime?
+  nextReviewAt  DateTime? // For spaced repetition
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  lesson        Lesson   @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, lessonId])
+  @@map("user_progress")
+}
+
+model Streak {
+  userId         String   @id
+  currentStreak   Int      @default(0)
+  longestStreak   Int      @default(0)
+  lastActiveDate DateTime?
+  updatedAt      DateTime @updatedAt
+
+  user           User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("streaks")
+}
+
+model Card {
+  id             String   @id @default(uuid())
+  nameEn          String
+  nameSi          String
+  descriptionEn   String
+  descriptionSi   String
+  rarity          String   // 'common' | 'rare' | 'epic' | 'legendary'
+  category        String?  // 'streak' | 'xp' | 'perfect' | 'completion' | 'special'
+  imageUrl        String
+  unlockCondition Json     // JSON condition for unlocking
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  userCards       UserCard[]
+
+  @@map("cards")
+}
+
+model UserCard {
+  id         String   @id @default(uuid())
+  userId     String
+  cardId     String
+  unlockedAt DateTime @default(now())
+  createdAt  DateTime @default(now())
+
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  card       Card     @relation(fields: [cardId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, cardId])
+  @@map("user_cards")
+}
+
+model Reflection {
+  id              String   @id @default(uuid())
+  userId          String
+  lessonId        String
+  answerText      String?
+  selectedOptionEn String?
+  selectedOptionSi String?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  lesson          Lesson   @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, lessonId])
+  @@map("reflections")
+}
+
+model ReflectionQuestion {
+  id              String   @id @default(uuid())
+  lessonId        String
+  category        String   // 'general' | 'challenging' | 'success'
+  promptEn        String
+  promptSi        String
+  optionsEn       String[] // Array of option strings
+  optionsSi       String[] // Array of option strings
+  orderIndex      Int      @default(0)
+  isActive        Boolean  @default(true)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  lesson          Lesson   @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+
+  @@index([lessonId])
+  @@index([lessonId, category])
+  @@unique([lessonId, category, orderIndex])
+  @@map("reflection_questions")
+}
+
